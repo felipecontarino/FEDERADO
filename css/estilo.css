@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "letra";
+  src: url("/fonts/NeueHaasDisplayLight.ttf");
+}
+@font-face {
+  font-family: "letracursiva";
+  src: url("/fonts/NeueHaasDisplayLightItalic.ttf");
+}
+@font-face {
+  font-family: "gotile";
+  src: url("/fonts/Gotile.ttf");
+}
+@font-face {
+  font-family: "means";
+  src: url(/fonts/Means-Regular-Web.c14e83d3.1.woff2);
+}
+@font-face {
+  font-family: "graphik";
+  src: url(/fonts/Graphik-Regular-Web.11b60cc4.1.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 110px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.navbar {
+  background-color: transparent;
+  align-items: center;
+  padding-top: 18px;
+}
+@media screen and (max-width: 991px) {
+  .navbar {
+    padding-top: 0px;
+  }
+}
+.navbar .navbar-brand {
+  padding-left: 55px;
+}
+@media screen and (max-width: 991px) {
+  .navbar .navbar-brand {
+    padding-left: 10px;
+  }
+}
+.navbar .navbar-brand .logo {
+  width: 35px;
+}
+.navbar .navbar-brand:hover {
+  transform: scale(1.1);
+}
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+@media screen and (max-width: 750px) {
+  .navbar .navbar-collapse {
+    background-color: rgb(255, 255, 255);
+  }
+}
+.navbar .navbar-nav {
+  margin-right: 200px;
+  padding-top: 12px;
+}
+.navbar .navbar-nav .nav-link {
+  font-family: "letra";
+  font-size: large;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.section1 {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 19px;
+}
+.section1 .bloque1 {
+  display: flex;
+  max-width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 19px;
+  justify-content: center;
+}
+.section1 .bloque1 .izq .logoinicio {
+  width: 80%;
+  margin-left: 120px;
+}
+@media screen and (max-width: 991px) {
+  .section1 .bloque1 .izq .logoinicio {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section1 .bloque1 .izq .logoinicio {
+    margin-left: 20px;
+  }
+}
+.section1 .bloque1 .esquina {
+  width: 45%;
+  margin-right: 50px;
+  border-radius: 19px;
+}
+@media screen and (max-width: 991px) {
+  .section1 .bloque1 {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 750px) {
+  .div {
+    display: none;
+  }
+}
+.div .divisor {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.dos {
+  background-color: rgb(255, 255, 255);
+}
+
+.elfede {
+  display: flex;
+  padding: 50px;
+}
+@media screen and (max-width: 991px) {
+  .elfede {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+}
+.elfede .texto2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-family: "letra";
+  padding: 40px;
+  justify-content: center;
+}
+@media screen and (max-width: 991px) {
+  .elfede .texto2 {
+    width: 100%;
+  }
+}
+.elfede .texto2 h2 {
+  font-size: xx-large;
+}
+.elfede .texto2 h6 {
+  padding: 20px;
+  font-size: x-large;
+}
+.elfede .imagen2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 991px) {
+  .elfede .imagen2 {
+    margin-bottom: 70px;
+  }
+}
+.elfede .imagen2 .fedelogo {
+  flex-shrink: 0;
+  max-width: 70%;
+}
+
+.tres {
+  background-color: #ffffff;
+}
+
+.section3 {
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 750px) {
+  .section3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section3 .imagen3 {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 750px) {
+  .section3 .imagen3 {
+    width: 100%;
+  }
+}
+.section3 .imagen3 .vrdoc {
+  width: 100%;
+  border-radius: 19px;
+}
+.section3 .texto3 {
+  font-family: "letra";
+  padding: 40px;
+  padding-top: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 750px) {
+  .section3 .texto3 {
+    width: 100%;
+  }
+}
+.section3 .texto3 h6 {
+  padding: 20px;
+  font-size: x-large;
+}
+
+.section4 {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+}
+@media screen and (max-width: 750px) {
+  .section4 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section4 .texto4 {
+  font-family: "letra";
+  padding: 40px;
+  padding-top: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 750px) {
+  .section4 .texto4 {
+    width: 100%;
+  }
+}
+.section4 .texto4 h6 {
+  padding: 20px;
+  font-size: x-large;
+}
+.section4 .imagen4 {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-left: 0px;
+}
+@media screen and (max-width: 750px) {
+  .section4 .imagen4 {
+    width: 100%;
+  }
+}
+.section4 .imagen4 .vrdoc {
+  width: 100%;
+  border-radius: 19px;
+}
+
+footer {
+  width: 100%;
+  font-family: "letra";
+  font-size: small;
+  background-color: transparent;
+  position: sticky;
+}
+@media screen and (max-width: 750px) {
+  footer .sticky-bottom {
+    position: fixed;
+  }
+}
+footer .footer-div {
+  background-color: transparent;
+}
+footer .footer-div .theend {
+  background-color: transparent;
+}
+footer .apertura {
+  width: 94%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 750px) {
+  footer .apertura {
+    margin-left: 14px;
+  }
+}
+footer .apertura .abrimos {
+  font-family: "letra";
+  color: rgb(0, 0, 0);
+  font-size: large;
+  background-color: transparent;
+}
+footer .apertura .abrimos2 {
+  font-family: "letra";
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}/*# sourceMappingURL=estilo.css.map */

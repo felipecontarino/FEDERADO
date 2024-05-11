@@ -1,0 +1,52 @@
+footer{
+ 
+    width: 100%;
+    font-family:"letra";
+    font-size: small;
+    background-color: transparent;
+    position: sticky;
+
+    .sticky-bottom{
+    @include mobile{
+        position: fixed;
+    }}
+
+    .footer-div{background-color: transparent;
+    
+    .theend{background-color: transparent;}}
+    
+   
+
+   
+        .apertura{
+            width: 94%;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 40px;
+            padding-top: 20px;
+            @include mobile {
+                margin-left: 14px;
+            }
+           
+
+            .abrimos{
+                font-family: "letra";
+                color: rgb(0, 0, 0);
+                font-size: large;
+                background-color: transparent;
+            }
+
+            .abrimos2{
+                font-family: "letra";
+                color: rgb(0, 0, 0);
+           
+                background-color: transparent;
+            }
+        }
+    }
+    
+
+   
+
+  
