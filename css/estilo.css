@@ -26,20 +26,26 @@
 
 .header {
   width: 100%;
-  height: 110px;
-  padding: 10px;
+  height: 80px;
+  padding-top: 10px;
   background-color: transparent;
 }
 
 .navbar {
   background-color: transparent;
   align-items: center;
-  padding-top: 18px;
+  padding-top: 5px;
 }
 @media screen and (max-width: 991px) {
   .navbar {
     padding-top: 0px;
   }
+}
+.navbar .navbar-toggler-icon {
+  background-image: url(/img/varr.png);
+}
+.navbar .navbar-toggler {
+  border: none;
 }
 .navbar .navbar-brand {
   padding-left: 55px;
@@ -49,8 +55,20 @@
     padding-left: 10px;
   }
 }
+@media screen and (max-width: 750px) {
+  .navbar .navbar-brand {
+    display: flex;
+    justify-content: center;
+  }
+}
 .navbar .navbar-brand .logo {
-  width: 35px;
+  width: 29px;
+  margin-left: 30px;
+}
+@media screen and (max-width: 750px) {
+  .navbar .navbar-brand .logo {
+    display: none;
+  }
 }
 .navbar .navbar-brand:hover {
   transform: scale(1.1);
@@ -58,20 +76,28 @@
 .navbar .navbar-collapse {
   flex-grow: 0;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 991px) {
   .navbar .navbar-collapse {
     background-color: rgb(255, 255, 255);
   }
 }
 .navbar .navbar-nav {
-  margin-right: 200px;
+  margin-right: 350px;
   padding-top: 12px;
 }
+@media screen and (max-width: 991px) {
+  .navbar .navbar-nav {
+    margin-right: 0px;
+  }
+}
 .navbar .navbar-nav .nav-link {
-  font-family: "letra";
-  font-size: large;
-  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: background-color 0.3s ease;
+}
+.navbar .navbar-nav .nav-link .logos {
+  width: 100px;
 }
 .navbar .nav-link:hover {
   transform: scale(1.1);
@@ -88,7 +114,12 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  border-radius: 19px;
+  margin-top: -195px;
+}
+@media screen and (max-width: 750px) {
+  .section1 {
+    margin-top: -20px;
+  }
 }
 .section1 .bloque1 {
   display: flex;
@@ -97,28 +128,11 @@
   border-radius: 19px;
   justify-content: center;
 }
-.section1 .bloque1 .izq .logoinicio {
-  width: 80%;
-  margin-left: 120px;
-}
-@media screen and (max-width: 991px) {
-  .section1 .bloque1 .izq .logoinicio {
-    margin-left: 50px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .section1 .bloque1 .izq .logoinicio {
-    margin-left: 20px;
-  }
-}
 .section1 .bloque1 .esquina {
-  width: 45%;
-  margin-right: 50px;
-  border-radius: 19px;
+  width: 100%;
 }
 @media screen and (max-width: 991px) {
   .section1 .bloque1 {
-    padding: 20px;
     max-width: 100%;
   }
 }
@@ -126,16 +140,33 @@
 .div {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
-@media screen and (max-width: 750px) {
-  .div {
-    display: none;
-  }
+
+.image-container {
+  position: relative;
+  width: 160px;
+  height: auto;
 }
-.div .divisor {
-  width: 90px;
-  display: flex;
-  justify-content: center;
+
+.divisor {
+  width: 160px;
+}
+
+.comiste {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  opacity: 0;
+}
+
+.image-container:hover .divisor {
+  opacity: 0;
+}
+
+.image-container:hover .comiste {
+  opacity: 1;
 }
 
 .dos {
@@ -166,6 +197,12 @@
 @media screen and (max-width: 991px) {
   .elfede .texto2 {
     width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .elfede .texto2 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .elfede .texto2 h2 {
@@ -233,6 +270,7 @@
 @media screen and (max-width: 750px) {
   .section3 .texto3 {
     width: 100%;
+    padding: 10px;
   }
 }
 .section3 .texto3 h6 {

@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    border-radius: 19px;
+   margin-top: -195px;
+   @include mobile{ margin-top: -20px;}
     
 
     
@@ -18,25 +19,15 @@
        background-color: rgb(255, 255, 255);
         border-radius: 19px;
         justify-content: center;
-.izq{ 
-        .logoinicio{width: 80%;
-           margin-left: 120px;
-           @include tablet{
-            margin-left: 50px;
-           }
 
-           @include mobile {
-            margin-left: 20px;
-           }
-            }}
 
-        .esquina{ width: 45%;
-            margin-right: 50px;
-        border-radius: 19px;}
+        .esquina{ width: 100%;
+            
+        }
      
     
         @include tablet {
-        padding: 20px;
+        
         max-width: 100%;
      }}
         
@@ -44,12 +35,37 @@
 
 
     }
-.div{display: flex;
-    justify-content: center;
-    @include mobile {
-        display: none;
-    }
-  
-    .divisor{width: 90px;
+    .div {
         display: flex;
-    justify-content: center;}}
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 160px;
+        height: auto; 
+        
+    }
+    
+    .divisor {
+        width: 160px;
+       
+    }
+    
+    .comiste {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 160px;
+        
+        opacity: 0;
+    }
+    
+    .image-container:hover .divisor {
+        opacity: 0;
+    }
+    
+    .image-container:hover .comiste {
+        opacity: 1;
+    }
