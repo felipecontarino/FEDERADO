@@ -5,7 +5,7 @@
     justify-content: center;
     width: 100%;
    margin-top: -195px;
-   @include mobile{ margin-top: -20px;}
+   @include mobile{ margin-top: -90px;}
     
 
     
@@ -19,17 +19,19 @@
        background-color: rgb(255, 255, 255);
         border-radius: 19px;
         justify-content: center;
+       
+        
 
 
         .esquina{ width: 100%;
+            @include tablet{display: none;}
             
         }
-     
+     .esquina2 {display: none;
+        width: 100%;
+    @include tablet{ display: flex;}}
     
-        @include tablet {
-        
-        max-width: 100%;
-     }}
+        }
         
         
 
@@ -39,17 +41,20 @@
         display: flex;
         justify-content: center;
         margin-top: 100px;
+        @include mobile{margin-top: 0px;}
     }
     
     .image-container {
         position: relative;
         width: 160px;
         height: auto; 
+       
         
     }
     
     .divisor {
         width: 160px;
+        @include mobile { display: none;}
        
     }
     
@@ -60,6 +65,7 @@
         width: 160px;
         
         opacity: 0;
+        @include mobile{display: none;}
     }
     
     .image-container:hover .divisor {
@@ -68,4 +74,45 @@
     
     .image-container:hover .comiste {
         opacity: 1;
+    }
+
+    
+    .div2 {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 100px;
+        display: none;
+        @include mobile{margin-top: 0px;
+        display: flex;
+    padding-right: 50px;}
+
+        .image-container2 {
+            position: relative;
+            width: 160px;
+            height: auto; 
+           
+            
+        }
+    .divisor2 {
+        width: 160px;}
+        
+       
+
+        .comiste2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 160px;
+            
+            opacity: 0;
+        }
+        
+        .image-container2:hover .divisor2 {
+            opacity: 0;
+        }
+        
+        .image-container2:hover .comiste2 {
+            opacity: 1;
+        }
+       
     }

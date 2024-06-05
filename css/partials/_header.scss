@@ -12,7 +12,9 @@
         background-color:transparent;
         align-items: center;
         padding-top: 5px;
-        @include tablet{ padding-top:0px;}
+        justify-content: space-between;
+        @include tablet{ padding-top:0px;
+        justify-content: center;}
 
         .navbar-toggler-icon {background-image: url(/img/varr.png);}
         .navbar-toggler {border: none;}
@@ -22,26 +24,34 @@
       
         .navbar-brand{
                 padding-left: 55px;
+               
 
                 @include tablet{ padding-left: 10px;}
                 @include mobile{display: flex;
                 justify-content: center;}
           
             .logo{ width:29px;
-            margin-left: 30px;
-        @include mobile{ display: none;}}
+            margin-left: 20px;
+            display:none;
+        @include tablet{ display: flex;}}
        }
           
         
             .navbar-brand:hover{
                 transform: scale(1.1);
             }
-.navbar-collapse{ flex-grow: 0;
+.navbar-collapse{ flex-grow: 1;
+   
+    justify-content: center;
     
     @include tablet{background-color: rgb(255, 255, 255);}}
             
-    .navbar-nav {margin-right: 350px;
-                padding-top: 12px;
+    .navbar-nav {
+                padding-top: 2px;
+                display: flex;
+                justify-content: flex-end;
+                margin-left: 100px;
+              
                 @include tablet{ margin-right: 0px;}
                
                

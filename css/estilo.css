@@ -35,10 +35,12 @@
   background-color: transparent;
   align-items: center;
   padding-top: 5px;
+  justify-content: space-between;
 }
 @media screen and (max-width: 991px) {
   .navbar {
     padding-top: 0px;
+    justify-content: center;
   }
 }
 .navbar .navbar-toggler-icon {
@@ -63,18 +65,20 @@
 }
 .navbar .navbar-brand .logo {
   width: 29px;
-  margin-left: 30px;
+  margin-left: 20px;
+  display: none;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 991px) {
   .navbar .navbar-brand .logo {
-    display: none;
+    display: flex;
   }
 }
 .navbar .navbar-brand:hover {
   transform: scale(1.1);
 }
 .navbar .navbar-collapse {
-  flex-grow: 0;
+  flex-grow: 1;
+  justify-content: center;
 }
 @media screen and (max-width: 991px) {
   .navbar .navbar-collapse {
@@ -82,8 +86,10 @@
   }
 }
 .navbar .navbar-nav {
-  margin-right: 350px;
-  padding-top: 12px;
+  padding-top: 2px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 100px;
 }
 @media screen and (max-width: 991px) {
   .navbar .navbar-nav {
@@ -118,7 +124,7 @@
 }
 @media screen and (max-width: 750px) {
   .section1 {
-    margin-top: -20px;
+    margin-top: -90px;
   }
 }
 .section1 .bloque1 {
@@ -132,8 +138,17 @@
   width: 100%;
 }
 @media screen and (max-width: 991px) {
-  .section1 .bloque1 {
-    max-width: 100%;
+  .section1 .bloque1 .esquina {
+    display: none;
+  }
+}
+.section1 .bloque1 .esquina2 {
+  display: none;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .section1 .bloque1 .esquina2 {
+    display: flex;
   }
 }
 
@@ -141,6 +156,11 @@
   display: flex;
   justify-content: center;
   margin-top: 100px;
+}
+@media screen and (max-width: 750px) {
+  .div {
+    margin-top: 0px;
+  }
 }
 
 .image-container {
@@ -152,6 +172,11 @@
 .divisor {
   width: 160px;
 }
+@media screen and (max-width: 750px) {
+  .divisor {
+    display: none;
+  }
+}
 
 .comiste {
   position: absolute;
@@ -160,12 +185,52 @@
   width: 160px;
   opacity: 0;
 }
+@media screen and (max-width: 750px) {
+  .comiste {
+    display: none;
+  }
+}
 
 .image-container:hover .divisor {
   opacity: 0;
 }
 
 .image-container:hover .comiste {
+  opacity: 1;
+}
+
+.div2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .div2 {
+    margin-top: 0px;
+    display: flex;
+    padding-right: 50px;
+  }
+}
+.div2 .image-container2 {
+  position: relative;
+  width: 160px;
+  height: auto;
+}
+.div2 .divisor2 {
+  width: 160px;
+}
+.div2 .comiste2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  opacity: 0;
+}
+.div2 .image-container2:hover .divisor2 {
+  opacity: 0;
+}
+.div2 .image-container2:hover .comiste2 {
   opacity: 1;
 }
 
@@ -186,6 +251,11 @@
     padding: 5px;
   }
 }
+@media screen and (max-width: 750px) {
+  .elfede {
+    margin-top: 50px;
+  }
+}
 .elfede .texto2 {
   width: 50%;
   display: flex;
@@ -201,8 +271,7 @@
 }
 @media screen and (max-width: 750px) {
   .elfede .texto2 {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 2px;
   }
 }
 .elfede .texto2 h2 {
@@ -221,6 +290,8 @@
 @media screen and (max-width: 991px) {
   .elfede .imagen2 {
     margin-bottom: 70px;
+    margin-top: 70px;
+    width: 100%;
   }
 }
 .elfede .imagen2 .fedelogo {
@@ -236,11 +307,12 @@
   width: 100%;
   display: flex;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 991px) {
   .section3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
   }
 }
 .section3 .imagen3 {
@@ -250,9 +322,12 @@
   padding: 10px;
   padding-right: 0px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 991px) {
   .section3 .imagen3 {
     width: 100%;
+    padding: 0px;
+    order: 2;
+    margin-top: 70px;
   }
 }
 .section3 .imagen3 .vrdoc {
@@ -267,10 +342,15 @@
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 991px) {
   .section3 .texto3 {
     width: 100%;
-    padding: 10px;
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section3 .texto3 {
+    padding: 2px;
   }
 }
 .section3 .texto3 h6 {
@@ -282,6 +362,7 @@
   width: 100%;
   display: flex;
   margin-top: 100px;
+  display: none;
 }
 @media screen and (max-width: 750px) {
   .section4 {
@@ -350,9 +431,11 @@ footer .apertura {
   margin-left: 40px;
   padding-top: 20px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 991px) {
   footer .apertura {
-    margin-left: 14px;
+    padding: 20px;
+    margin-left: 0px;
+    width: 100%;
   }
 }
 footer .apertura .abrimos {
@@ -360,6 +443,11 @@ footer .apertura .abrimos {
   color: rgb(0, 0, 0);
   font-size: large;
   background-color: transparent;
+}
+@media screen and (max-width: 750px) {
+  footer .apertura .abrimos {
+    font-size: medium;
+  }
 }
 footer .apertura .abrimos2 {
   font-family: "letra";

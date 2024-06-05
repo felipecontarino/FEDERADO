@@ -2,6 +2,7 @@
     width: 100%;
    display: flex;
    margin-top: 100px;
+   display: none;
 
    @include mobile {
     flex-direction: column;

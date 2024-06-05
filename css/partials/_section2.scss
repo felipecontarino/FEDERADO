@@ -10,6 +10,7 @@
     justify-content: center;
 align-items: center;
 padding: 5px;}
+@include mobile{ margin-top: 50px;}
 
 
 .texto2{
@@ -25,8 +26,7 @@ padding: 5px;}
 
         @include mobile{
             
-            padding-left: 10px;
-            padding-right: 10px;
+           padding: 2px;
             
         }
    
@@ -43,7 +43,9 @@ padding: 5px;}
    display:flex;
    justify-content: center;
    align-items: center;
-   @include tablet{margin-bottom: 70px;}
+   @include tablet{margin-bottom: 70px;
+margin-top: 70px;
+width: 100%;}
     
    
     

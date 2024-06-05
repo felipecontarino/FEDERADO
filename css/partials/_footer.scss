@@ -25,8 +25,10 @@ footer{
             justify-content: space-between;
             margin-left: 40px;
             padding-top: 20px;
-            @include mobile {
-                margin-left: 14px;
+            @include tablet {
+               padding: 20px;
+               margin-left: 0px;
+               width: 100%;
             }
            
 
@@ -35,6 +37,7 @@ footer{
                 color: rgb(0, 0, 0);
                 font-size: large;
                 background-color: transparent;
+                @include mobile {font-size: medium;}
             }
 
             .abrimos2{
