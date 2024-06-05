@@ -94,6 +94,7 @@
 @media screen and (max-width: 991px) {
   .navbar .navbar-nav {
     margin-right: 0px;
+    margin-left: 0px;
   }
 }
 .navbar .navbar-nav .nav-link {
