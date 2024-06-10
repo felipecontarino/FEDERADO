@@ -298,9 +298,13 @@
 }
 @media screen and (max-width: 991px) {
   .elfede .imagen2 {
-    margin-bottom: 70px;
     margin-top: 70px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .elfede .imagen2 {
+    margin-bottom: 70px;
   }
 }
 .elfede .imagen2 .fedelogo {
