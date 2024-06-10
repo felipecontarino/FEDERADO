@@ -1,5 +1,7 @@
 
 .tres{background-color:#ffffff;
+  margin-bottom: 30px;
+  
 
 }
 
@@ -12,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 70px;
    }
    
  
@@ -26,12 +28,13 @@
          @include tablet{width: 100%;
         padding: 0px;
       order: 2;
-    margin-top: 70px;}
+    margin-top: 40px;}
 
        
 
     .vrdoc{width: 100%;
-    border-radius: 19px;}}
+    border-radius: 19px;
+       @include tablet {border-radius: 0px;}}}
 
     .texto3{ font-family: "letra";
     padding: 40px;
@@ -42,9 +45,14 @@
       @include tablet{width: 100%;
       padding: 40px;}
       @include mobile {padding: 2px;}
+
+      h2{ @include mobile { padding-left: 15px;}}
     
       h6{padding: 20px;
-        font-size: x-large;}}
+        font-size: x-large;
+      
+      @include mobile{ padding: 40px;
+      padding-top: 20px;}}}
     }
    
    

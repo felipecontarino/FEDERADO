@@ -5,7 +5,7 @@
     justify-content: center;
     width: 100%;
    margin-top: -195px;
-   @include mobile{ margin-top: -90px;}
+   @include mobile{ margin-top: -99px;}
     
 
     
@@ -24,12 +24,12 @@
 
 
         .esquina{ width: 100%;
-            @include tablet{display: none;}
+           
             
         }
      .esquina2 {display: none;
         width: 100%;
-    @include tablet{ display: flex;}}
+   }
     
         }
         
@@ -94,7 +94,7 @@
             
         }
     .divisor2 {
-        width: 160px;}
+        width: 110px;}
         
        
 
@@ -102,7 +102,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 160px;
+            width: 100px;
             
             opacity: 0;
         }
@@ -116,3 +116,8 @@
         }
        
     }
+
+
+
+
+  

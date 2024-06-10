@@ -37,14 +37,16 @@ footer{
                 color: rgb(0, 0, 0);
                 font-size: large;
                 background-color: transparent;
-                @include mobile {font-size: medium;}
+                @include mobile {font-size: small;}
             }
 
             .abrimos2{
                 font-family: "letra";
                 color: rgb(0, 0, 0);
+                font-size: large;
            
                 background-color: transparent;
+                @include mobile {font-size: small;}
             }
         }
     }
