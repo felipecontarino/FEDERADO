@@ -76,7 +76,6 @@
 .navbar .navbar-brand .logo {
   width: 19px;
   margin-left: 20px;
-  display: none;
 }
 @media screen and (max-width: 991px) {
   .navbar .navbar-brand .logo {
