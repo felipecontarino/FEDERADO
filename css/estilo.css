@@ -48,7 +48,7 @@
     margin-top: 46%;
   }
 }
-@media screen and (max-height: 370px) {
+@media screen and (max-height: 510px) {
   .navbar {
     margin-top: 35%;
   }
@@ -106,7 +106,7 @@
     margin-left: 0px;
   }
 }
-@media screen and (max-height: 370px) {
+@media screen and (max-height: 510px) {
   .navbar .navbar-nav {
     margin-left: 600px;
   }
@@ -125,7 +125,7 @@
   transition: 0.3s;
 }
 
-@media screen and (max-height: 370px) {
+@media screen and (max-height: 510px) {
   .navbar-nav {
     margin-top: -200px;
     margin-left: 600px;

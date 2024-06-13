@@ -17,7 +17,7 @@
         }}
     
         @mixin wide {
-          @media screen and (max-height: 370px) {
+          @media screen and (max-height: 510px) {
               @content;
           }
             
