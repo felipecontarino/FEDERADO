@@ -5,11 +5,12 @@ footer{
     font-size: small;
     background-color: transparent;
     position: sticky;
+    @include tablet{
+        position:absolute;
+    }
+   
 
-    .sticky-bottom{
-    @include mobile{
-        position: fixed;
-    }}
+   
 
     .footer-div{background-color: transparent;
     
@@ -52,6 +53,10 @@ footer{
     }
     
 
-   
+    .sticky-bottom{
+        @include tablet{
+            position:absolute;
+            bottom: auto;
+        }}
 
   

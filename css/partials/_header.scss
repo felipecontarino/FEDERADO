@@ -17,6 +17,8 @@
         @include tablet{ margin-top: 38%;
         justify-content: center;}
         @include mobile {margin-top: 46%;}
+        @include wide { 
+            margin-top:35%;}
        
 
         .navbar-toggler-icon {background-image: url(../img/varr.png);}
@@ -58,7 +60,8 @@
                 @include tablet{ margin-right: 0px;
                 margin-left: 0px;}
                
-               
+                @include wide { 
+                    margin-left: 600px;}
                 
             
             .nav-link{
@@ -79,7 +82,8 @@
                 
             }
             
-            
+            .navbar-nav{ @include wide { margin-top: -200px;
+            margin-left: 600px;}}
             
 
          
