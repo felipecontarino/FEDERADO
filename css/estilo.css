@@ -45,7 +45,7 @@
 }
 @media screen and (max-width: 750px) {
   .navbar {
-    margin-top: 46%;
+    margin-top: 63%;
   }
 }
 @media screen and (max-height: 510px) {
@@ -160,9 +160,19 @@
 .section1 .bloque1 .esquina {
   width: 100%;
 }
+@media screen and (max-width: 750px) {
+  .section1 .bloque1 .esquina {
+    display: none;
+  }
+}
 .section1 .bloque1 .esquina2 {
   display: none;
   width: 100%;
+}
+@media screen and (max-width: 750px) {
+  .section1 .bloque1 .esquina2 {
+    display: flex;
+  }
 }
 
 .div {

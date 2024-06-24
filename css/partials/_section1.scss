@@ -24,11 +24,13 @@
 
 
         .esquina{ width: 100%;
+            @include mobile {display: none;}
            
             
         }
      .esquina2 {display: none;
         width: 100%;
+        @include mobile {display: flex;}
    }
     
         }
